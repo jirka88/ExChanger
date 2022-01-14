@@ -1,12 +1,4 @@
 
-const Zaukrhli = (vypocet) => { //Zaukrouhlení na dvě desetiná místa 
-    PocetMist = Math.pow(10, 2);
-    vypocet *= PocetMist;
-    vypocet = Math.round(vypocet);
-    vypocet /= PocetMist;
-    return vypocet;
-}
-
 function vypocti() {
     let vystup = document.getElementById("vystup");
     let castka = +document.getElementById("castka").value;
@@ -18,6 +10,6 @@ function vypocti() {
     async function getText(file) {
         let myObject = await fetch(file);
         let myText = await myObject.json();
-        vystup.value = Zaukrhli(parseFloat(myText.data[NaMenu]) * castka, 2);
+        vystup.value = (parseFloat(myText.data[NaMenu]) * castka ).toFixed(3) + " " + NaMenu;
     }
 }
