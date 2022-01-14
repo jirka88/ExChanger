@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="cs-cz">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="smenarna.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="smenarna.css" />
     <script src="smenarna.js"></script>
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="body">
-        <div class="box">
-            <p>Převodník</p>
-            <p>z měny</p>
-            <select class="section">
-                <option value="JPY">JPY (Japonský yen)</option>
-                <option value="CZK">CZK (česká koruna)</option>
-                <option value="EUR">EUR (Euro)</option>
-                <option value="USD">USD (Americký dolar)</option>
-                <option value="CNY">CNY (Čínský Yuan)</option>
-                <option value="BGN">BGN (Bulharský Lev)</option>
-                <option value="HUF">HUF (Maďarský Forint)</option>
-                <option value="RON">RON (Rumunský Leu)</option>
-                <option value="SEK">SEK (Švédská Krona)</option>
-                <option value="RUB">RUB (Ruský Rubl)</option>
-                <option value="PLN">PLN (Polský złoty)</option>
-                <input type="number" id="castka" value="1" min="1">
-            </select>
-            <p>na měnu</p>
-            <select class="section2">
-                <option value="JPY">JPY (Japonský yen)</option>
-                <option value="CZK">CZK (česká koruna)</option>
-                <option value="EUR">EUR (Euro)</option>
-                <option value="USD">USD (Americký dolar)</option>
-                <option value="CNY">CNY (Čínský Yuan)</option>
-                <option value="BGN">BGN (Bulharský Lev)</option>
-                <option value="HUF">HUF (Maďarský Forint)</option>
-                <option value="RON">RON (Rumunský Leu)</option>
-                <option value="SEK">SEK (Švédská Krona)</option>
-                <option value="RUB">RUB (Ruský Rubl)</option>
-                <option value="PLN">PLN (Polský złoty)</option>
-            </select>
-            <input type="button" value="převod" onclick="vypocti()">
-            <input type="text" id="vystup" readonly>
-        </div>
+      <div class="box">
+        <p>Převodník</p>
+        <p>z měny</p>
+        <select class="section">
+          <option value="JPY">JPY (Japonský yen)</option>
+          <option value="CZK">CZK (česká koruna)</option>
+          <option value="EUR">EUR (Euro)</option>
+          <option value="USD">USD (Americký dolar)</option>
+          <option value="CNY">CNY (Čínský Yuan)</option>
+          <option value="BGN">BGN (Bulharský Lev)</option>
+          <option value="HUF">HUF (Maďarský Forint)</option>
+          <option value="RON">RON (Rumunský Leu)</option>
+          <option value="SEK">SEK (Švédská Krona)</option>
+          <option value="RUB">RUB (Ruský Rubl)</option>
+          <option value="PLN">PLN (Polský złoty)</option>
+          <option value="ARS">ARS (Argentinské Peso)</option>
+          <input type="number" id="castka" value="1" min="1" />
+        </select>
+        <p>na měnu</p>
+        <select class="section2">
+          <option value="JPY">JPY (Japonský yen)</option>
+          <option value="CZK">CZK (česká koruna)</option>
+          <option value="EUR">EUR (Euro)</option>
+          <option value="USD">USD (Americký dolar)</option>
+          <option value="CNY">CNY (Čínský Yuan)</option>
+          <option value="BGN">BGN (Bulharský Lev)</option>
+          <option value="HUF">HUF (Maďarský Forint)</option>
+          <option value="RON">RON (Rumunský Leu)</option>
+          <option value="SEK">SEK (Švédská Krona)</option>
+          <option value="RUB">RUB (Ruský Rubl)</option>
+          <option value="PLN">PLN (Polský złoty)</option>
+          <option value="ARS">ARS (Argentinské Peso)</option>
+        </select>
+        <input type="button" value="převod" onclick="vypocti()" />
+        <input type="text" id="vystup" readonly />
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
