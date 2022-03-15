@@ -10,14 +10,13 @@ function vypocti() {
     let castka = +document.getElementById("castka").value;
     let mena = document.querySelector(".section").value;
     let NaMenu = document.getElementsByClassName("section")[1].value;
-
-    getText("https://freecurrencyapi.net/api/v2/latest?apikey=4363eb70-72b0-11ec-a578-918f3effcd01&base_currency=" + mena); //vznesení požadavku
+    getText("https://api.currencyapi.com/v3/latest?apikey=4p9sKWxpwIVcbIiYpQ5KCKfo1w4fGk6zO4kkTl3j&base_currency=" + mena); //vznesení požadavku
 
     async function getText(file) {
         try {
             let myObject = await fetch(file);
             let myText = await myObject.json();
-            vystup.value = (parseFloat(myText.data[NaMenu]) * castka ).toFixed(3) + " " + NaMenu;
+            vystup.value = (parseFloat(myText.data[NaMenu].value) * castka ).toFixed(3) + " " + NaMenu;
             tlacitko.style.boxShadow = "6px 5px 0px green";
         } 
         catch (error) {
